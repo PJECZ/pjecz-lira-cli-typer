@@ -1,0 +1,26 @@
+[project]
+name = "pjecz-lira-cli-typer"
+version = "0.1.0"
+description = "Command Line Interface (CLI) para Plataforma Lira. Hecho con Typer."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pydantic>=2.13.1",
+    "pydantic-settings>=2.13.1",
+    "requests>=2.33.1",
+    "rich>=15.0.0",
+    "typer>=0.24.1",
+    "watchdog>=6.0.0",
+]
+
+[tool.basedpyright]
+pythonVersion = "3.14"
+typeCheckingMode = "basic"
+reportCallIssue = "hint"
+reportMissingImports = "warning"
+reportUndefinedVariable = "warning"
+exclude = ["**/tests"]
+
+[tool.ruff]
+ignore = ["F821"]
+line-length = 128
