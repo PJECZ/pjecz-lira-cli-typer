@@ -1,23 +1,49 @@
 # pjecz-lira-cli-typer
 Interfaz de línea de comandos (CLI) para cargar archivos a la Plataforma Lira. Hecho con Typer.
 
-## Instalación en Windows
-
-Para crear un ejecutable que se ejecute sin abrir la consola, ve a la carpeta del proyecto y ejecuta:
-
-```bash
-pyinstaller --onefile --noconsole main.py
-```
-
-El ejecutable generado se creará en `carpeta_del_proyecto\dist\main.exe`
-
 ### Preparación
 
 Debes tener instalado:
 
+- Git
 - Python 3.14
 - uv - Manejador de paquetes para Python
 - GDrive - Aplicación de sincronización con Google Drive
+
+## Instalación en Windows
+
+### Instalación de Git
+Ejecutar en PowerShell 
+```bash
+winget install --id Git.Git -e --source winget
+```
+
+Configurar con
+```bash
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"
+```
+
+### Instalación UV
+Ejecutar en PowerShell 
+```bash
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+### Instalar el proyecto desde Github
+Ejecutar en cmd 
+```bash
+uv sync
+```
+
+Para crear un ejecutable que se ejecute sin abrir la consola, ve a la carpeta del proyecto y ejecuta:
+
+```bash
+uv run pyinstaller --onefile --noconsole main.py
+```
+
+El ejecutable generado se creará en `carpeta_del_proyecto\dist\main.exe`
+
 
 ### Instalar _script_ como servicio en windows
 
