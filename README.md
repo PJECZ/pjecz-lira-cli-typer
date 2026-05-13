@@ -52,8 +52,9 @@ El ejecutable generado se creará en `carpeta_del_proyecto\dist\main.exe`
 3. Añade un nombre ejem: "syncFolder" y una descripción: "Programa para sincronizar folder de videos con GDrive"
 4. **Desencadenar**: Al iniciarse el equipo
 5. **Acción**: Iniciar un programa
-6. **Programa o script**: Aquí busca la ruta del ejecutable que se generó esta en: `C:\...\carpeta_del_proyecto\dist\main.exe`
-7. **Agregar argumentos (opcional)**: Añade los siguiente parámetros: `--source c:\carpeta-origen --dest c:\carpeta-destino`
-8. Ahora selecciona la tarea, da clic derecho sobre ella y selecciona ejecutar. Copia un archivo en el directorio `c:\carpeta-origen` y revisa después de un minuto el directorio `c:\carpeta-destino` para comprobar si funciona.
+6. **Programa o script**: Aquí busca la ruta del ejecutable que se generó está en: `C:\...\carpeta_del_proyecto\dist\main.exe`
+7. **Agregar argumentos (opcional)**: Añade los siguiente parámetros: `--source c:\carpeta-origen --dest c:\carpeta-destino`, en la carpeta de origen es donde se estan guardadndo los videos del sistema SAJI y el destino es la carpeta de google dirve.
+8. Presionar el botón finalizar.
+9. Ahora selecciona la tarea, da clic derecho sobre ella y selecciona ejecutar. Copia un archivo en el directorio `c:\carpeta-origen` y revisa después de un minuto el directorio `c:\carpeta-destino` para comprobar si funciona.
 
 Listo! con esto debería mantenerse en ejecución el programa y copiar los archivos del directorio origen al destino.
